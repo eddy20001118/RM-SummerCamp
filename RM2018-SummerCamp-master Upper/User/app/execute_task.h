@@ -9,5 +9,7 @@ void test_moto_init(void);
 void test_moto_control(void);
 void qidong(void);
 void qidongInit(void);
+void callback(void);
+unsigned char HexToChar(unsigned char bChar);
 #endif
 

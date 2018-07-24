@@ -33,16 +33,20 @@ void test_moto_control(void)
    test_moto_speed[3] = -rc.ch4/RC_MAX_VALUE*MAX_VALUE[0];  //chanel 4 to control lift3508[right]-id4
 	 UpperIntake_speed = rc.ch3/RC_MAX_VALUE*MAX_VALUE[1];    //chanel 3 to control UpperIntake3508-id5
 
+	
     test_moto_current[0] = pid_calc(&pid_2006_Left, moto_chassis[0].speed_rpm, test_moto_speed[0]);  
 	  test_moto_current[1] = pid_calc(&pid_2006_Right, moto_chassis[1].speed_rpm, test_moto_speed[1]);
 	  test_moto_current[2] = pid_calc(&pid_3508_Left,moto_chassis[2].speed_rpm, test_moto_speed[2]);
 	  test_moto_current[3] = pid_calc(&pid_3508_Right,moto_chassis[3].speed_rpm, test_moto_speed[3]);
-   UpperIntake_current = pid_calc(&pid_yaw_speed,moto_yaw.speed_rpm,UpperIntake_speed);
-   set_test_motor_current(test_moto_current);
+  
+ 	UpperIntake_current = pid_calc(&pid_yaw_speed,moto_yaw.speed_rpm,UpperIntake_speed);
+   
+	 set_test_motor_current(test_moto_current);
 	 set_gib_motor_current(UpperIntake_current);
 }
 
-void qidongInit(void){
+void qidongInit(void)
+{
 	set_digital_io_dir(QD1,IO_OUTPUT);
 	set_digital_io_dir(QD2,IO_OUTPUT);
 }
@@ -60,12 +64,13 @@ void qidong(void)
 	}
 }
   
-	void test_moto_init(void)
-		{
+void test_moto_init(void)
+	{
+		 pid_init(&pid_2006_Left, 7000, 0, 10, 0, 0);
+		 pid_init(&pid_2006_Right, 7000, 0, 10, 0, 0);
+		 pid_init(&pid_3508_Left, 7000, 0, 10, 0, 0);
+		 pid_init(&pid_3508_Right, 7000, 0, 10, 0, 0);
+		 pid_init(&pid_yaw_speed, 7000, 0, 6, 0, 30);
+	}	
 
-			 pid_init(&pid_2006_Left, 7000, 0, 10, 0, 0);
-			 pid_init(&pid_2006_Right, 7000, 0, 10, 0, 0);
-			 pid_init(&pid_3508_Left, 7000, 0, 10, 0, 0);
-			 pid_init(&pid_3508_Right, 7000, 0, 10, 0, 0);
-			 pid_init(&pid_yaw_speed, 7000, 0, 5, 0, 10);
-			}	
+	

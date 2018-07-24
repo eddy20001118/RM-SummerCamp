@@ -270,7 +270,7 @@ I (..\Inc\hal_inc\stm32f4xx_hal_uart.h)(0x5B55D598)
 I (..\User\app\chassis_task.h)(0x5B55D59E)
 I (..\User\app\detect_task.h)(0x5B55D59E)
 I (..\User\app\gimbal_task.h)(0x5B55D59E)
-I (..\User\app\execute_task.h)(0x5B55DE4A)
+I (..\User\app\execute_task.h)(0x5B56B284)
 I (..\Inc\os_inc\cmsis_os.h)(0x5B55D599)
 I (..\Inc\os_inc\FreeRTOS.h)(0x5B55D599)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x56FE42DE)
@@ -468,8 +468,8 @@ I (..\Inc\os_inc\timers.h)(0x5B55D59A)
 I (..\Inc\os_inc\queue.h)(0x5B55D599)
 I (..\Inc\os_inc\semphr.h)(0x5B55D59A)
 I (..\Inc\os_inc\event_groups.h)(0x5B55D599)
-F (..\User\app\execute_task.c)(0x5B55DF33)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Inc\hal_inc -I ..\Inc\m3_inc -I ..\Inc\os_inc -I ..\Inc\hal_inc\Legacy -I ..\User -I ..\User\algorithm -I ..\User\app -I ..\User\driver --C99-I "C:\Users\dji\Downloads\RM\RM2018-SummerCamp-master Upper\Project\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F427xx -DUSE_HAL_DRIVER -DSTM32F427xx --C99-o .\rm_infantry\execute_task.o --omf_browse .\rm_infantry\execute_task.crf --depend .\rm_infantry\execute_task.d)
-I (..\User\app\execute_task.h)(0x5B55DE4A)
+F (..\User\app\execute_task.c)(0x5B56C487)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Inc\hal_inc -I ..\Inc\m3_inc -I ..\Inc\os_inc -I ..\Inc\hal_inc\Legacy -I ..\User -I ..\User\algorithm -I ..\User\app -I ..\User\driver --C99-I "C:\Users\dji\Downloads\RM\RM2018-SummerCamp-master Upper\Project\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F427xx -DUSE_HAL_DRIVER -DSTM32F427xx --C99-o .\rm_infantry\execute_task.o --omf_browse .\rm_infantry\execute_task.crf --depend .\rm_infantry\execute_task.d)
+I (..\User\app\execute_task.h)(0x5B56B284)
 I (..\Inc\hal_inc\stm32f4xx_hal.h)(0x5B55D595)
 I (..\Inc\stm32f4xx_hal_conf.h)(0x5B55D595)
 I (..\Inc\main.h)(0x5B55D594)
@@ -653,8 +653,8 @@ I (..\User\driver\can_device.h)(0x5B56968C)
 I (..\User\algorithm\pid.h)(0x5B5697C7)
 I (..\User\sys.h)(0x5B55D59D)
 F (..\User\sys.h)(0x5B55D59D)()
-F (.\test_custom.c)(0x5B56998B)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Inc\hal_inc -I ..\Inc\m3_inc -I ..\Inc\os_inc -I ..\Inc\hal_inc\Legacy -I ..\User -I ..\User\algorithm -I ..\User\app -I ..\User\driver --C99-I "C:\Users\dji\Downloads\RM\RM2018-SummerCamp-master Upper\Project\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F427xx -DUSE_HAL_DRIVER -DSTM32F427xx --C99-o .\rm_infantry\test_custom.o --omf_browse .\rm_infantry\test_custom.crf --depend .\rm_infantry\test_custom.d)
-I (..\User\app\execute_task.h)(0x5B55DE4A)
+F (.\test_custom.c)(0x5B56C6B5)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Inc\hal_inc -I ..\Inc\m3_inc -I ..\Inc\os_inc -I ..\Inc\hal_inc\Legacy -I ..\User -I ..\User\algorithm -I ..\User\app -I ..\User\driver --C99-I "C:\Users\dji\Downloads\RM\RM2018-SummerCamp-master Upper\Project\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F427xx -DUSE_HAL_DRIVER -DSTM32F427xx --C99-o .\rm_infantry\test_custom.o --omf_browse .\rm_infantry\test_custom.crf --depend .\rm_infantry\test_custom.d)
+I (..\User\app\execute_task.h)(0x5B56B284)
 I (..\Inc\hal_inc\stm32f4xx_hal.h)(0x5B55D595)
 I (..\Inc\stm32f4xx_hal_conf.h)(0x5B55D595)
 I (..\Inc\main.h)(0x5B55D594)
