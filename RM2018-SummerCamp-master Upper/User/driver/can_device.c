@@ -277,5 +277,20 @@ void set_test_motor_current(int16_t test_moto_current[])
   data[5] = test_moto_current[2];
   data[6] = test_moto_current[3] >> 8;
   data[7] = test_moto_current[3];
+  write_can(USER_CAN1, CAN_CHASSIS_ID, data);
+}
+
+void set_gib_motor_current(int16_t gib_moto_current)
+{
+  static uint8_t data[8];
+  data[0] = gib_moto_current >> 8;
+  data[1] = gib_moto_current;
+	/*
+  data[2] = gib_moto_current[1] >> 8;
+  data[3] = gib_moto_current[1];
+  data[4] = gib_moto_current[2] >> 8;
+  data[5] = gib_moto_current[2];
+  data[6] = gib_moto_current[3] >> 8;
+  data[7] = gib_moto_current[3]; */
   write_can(USER_CAN1, CAN_GIMBAL_ID, data);
 }
